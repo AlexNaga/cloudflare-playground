@@ -1,4 +1,4 @@
-addEventListener("fetch", function (event) {
+addEventListener("fetch", function (event: FetchEvent) {
   event.respondWith(handleRequest(event.request));
 });
 async function handleRequest(request) {
